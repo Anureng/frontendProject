@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const End = () => {
     return (
@@ -12,11 +12,11 @@ const End = () => {
                 </div>
                 <button className='bg-[#8064A2] text-white px-4 py-1 rounded-lg'>Get Started</button>
             </div>
-            <div className='flex items-center '>
-                <img src='/image1.png' className='w-full h-80' />
+            <div className='flex items-center'>
+                <img src='/image1.png' className='w-full md:h-80' alt="End Image" />
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default End
+export default End;

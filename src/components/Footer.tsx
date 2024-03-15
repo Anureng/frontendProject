@@ -1,5 +1,5 @@
-import React from 'react'
-import { CiSearch } from 'react-icons/ci'
+import React from 'react';
+import { CiSearch } from 'react-icons/ci';
 import { FaFacebookF, FaYoutube } from "react-icons/fa6";
 import { FaTwitter, FaInstagram, FaGooglePlusG } from "react-icons/fa";
 import { IoLogoPinterest } from "react-icons/io5";
@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
     return (
-        <div className='flex  justify-evenly p-4'>
+        <div className='flex flex-col md:flex-row justify-evenly p-4'>
             <div className='font-light space-y-3'>
                 <div>
                     <p className='font-bold'>Hobbycue</p>
@@ -67,18 +67,18 @@ const Footer = () => {
                     <div>
                         <p>Invite Friends</p>
                     </div>
-                    <div className='flex h-8  border rounded-lg w-fit'>
-                        <div className=' w-64 flex items-center px-2 py-1  '>
-                            <input type="text" placeholder='Search here...' className='focus:outline-none ' />
+                    <div className='flex flex-col md:flex-row h-8 md:h-auto border rounded-lg'>
+                        <div className='md:w-64 flex items-center px-2 py-1'>
+                            <input type="text" placeholder='Search here...' className='focus:outline-none' />
                         </div>
-                        <div className='bg-[#8064A2]  w-fit px-3 py-2 border-lg flex items-center justify-center text-white'>
+                        <div className='bg-[#8064A2] md:ml-2 md:mt-0 mt-2 w-fit px-3 py-2 border-lg flex items-center justify-center text-white rounded-lg'>
                             <CiSearch />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
