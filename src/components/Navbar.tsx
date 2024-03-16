@@ -13,7 +13,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 800); // Adjust the threshold as needed
+            setIsMobile(window.innerWidth <= 900); // Adjust the threshold as needed
         };
 
         // Initial check on component mount
@@ -47,7 +47,7 @@ const Navbar = () => {
 
             {/* Conditionally render non-mobile data */}
             {!isMobile && (
-                <div className='flex items-center justify-evenly p-1 w-full  shadow-lg '>
+                <div className='flex items-center md:justify-evenly p-1 w-full  shadow-lg '>
                     <img className='w-72 h-16' src="https://s3-alpha-sig.figma.com/img/153c/f988/785cdcec05510cbdc9cb1b82a17b77fc?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g6eD0TCCyQD1FqcNaf-tDNV6e~sJMa-jiSFacpyn5Xi~QLa3nO7DhLjaNAxvLwkiLRDWC~OwMtGA2litWF-K0zDvZsSkSZzoZQmhMmQvIZ06XpZdJwrFDAeG-Qte6awSq20VCLxbUYukIOMY2Uy5t-Uwad3zbHO3EW~qsdPeKQRTHOR7n1NOIIHhhl~f8R95XNIgff5mpCttw~J2SahXwMuYvLcJlMbFhUCk3zvljqbyLvPxFvxsedHnPdxzdAf5kkD4nwbsoawxIFus~skDmMKwI~915FyUQEZBiYqR8sxaCg~qDNFwcm7UY8Bwgc2kdY2FVi-WoKGG6uGNZrutXQ__" alt="" />
                     <div className='flex h-8  border rounded-lg'>
                         <div className=' w-64 flex items-center px-2 py-1  '>
@@ -57,7 +57,7 @@ const Navbar = () => {
                             <CiSearch />
                         </div>
                     </div>
-                    <div className='flex items-center space-x-8'>
+                    <div className='flex items-center lg:space-x-8'>
                         <div className='flex items-center justify-center'>
                             <MdExplore className='bg-white rounded-xl  w-6 h-6 text-[#8064A2]' />
                             <p>Explore</p>

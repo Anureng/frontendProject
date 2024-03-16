@@ -41,16 +41,16 @@ const Login = () => {
                                 : ''
                                 } py-2 px-4 font-semibold focus:outline-none`}
                         >
-                            Login
+                            Sign In
                         </button>
                         <button
-                            onClick={() => handleTabClick('signup')}
-                            className={`${activeTab === 'signup'
+                            onClick={() => handleTabClick('Join In')}
+                            className={`${activeTab === 'Join In'
                                 ? 'border-b-2 border-blue-500'
                                 : ''
                                 } py-2 px-4 font-semibold focus:outline-none`}
                         >
-                            Sign Up
+                            Join Up
                         </button>
                     </div>
                     <div className='mt-8'>
@@ -60,7 +60,10 @@ const Login = () => {
                                     <button className='border rounded-lg p-2 border-black font-medium'>Continue with Google</button>
                                     <button className='border rounded-lg p-2 border-black font-medium'>Continue with Facebook</button>
                                 </div>
-                                <p className='flex items-center justify-center'>or connect with</p>
+                                <p className='flex items-center justify-center'>
+                                    <hr className="h-px bg-gray-900 border-0  w-40 md:w-54" /> or connect with
+                                    <hr className="h-px bg-gray-900 border-0 w-40 md:w-54" />
+                                </p>
                                 <input className='flex p-2 focus:outline-none rounded-lg w-full' type="text" placeholder='Email' />
                                 <input className='flex p-2 focus:outline-none rounded-lg w-full' type="password" placeholder='Password' />
                                 <div className='flex items-center justify-between'>
@@ -73,7 +76,7 @@ const Login = () => {
                                 <button className='border flex items-center justify-center w-full p-2 rounded-lg border-black'>Continue</button>
                             </div>
                         )}
-                        {activeTab === 'signup' && (
+                        {activeTab === 'Join In' && (
                             <div className='space-y-4'>
                                 <div className='flex flex-col space-y-3' >
                                     <button className='border rounded-lg p-2 border-black font-medium'>Continue with Google</button>
