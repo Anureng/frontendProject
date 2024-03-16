@@ -82,7 +82,8 @@ const Login = () => {
                                     <button className='border rounded-lg p-2 border-black font-medium'>Continue with Google</button>
                                     <button className='border rounded-lg p-2 border-black font-medium'>Continue with Facebook</button>
                                 </div>
-                                <p className='flex items-center justify-center'>or connect with</p>
+                                <p className='flex items-center justify-center'> <hr className="h-px bg-gray-900 border-0  w-40 md:w-54" /> or connect with
+                                    <hr className="h-px bg-gray-900 border-0 w-40 md:w-54" /></p>
                                 <input className='flex p-2 focus:outline-none rounded-lg w-full' type="text" placeholder='Email' />
                                 <input className='flex p-2 focus:outline-none rounded-lg w-full' type="password" placeholder='Password' />
                                 <div className='flex items-center justify-between text-xs font-light'>
